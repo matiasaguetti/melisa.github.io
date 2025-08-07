@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo Meta Pixel</title>
+
+  <!-- Meta Pixel base: sustituye YOUR_PIXEL_ID -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','YOUR_PIXEL_ID');
+    fbq('track','PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" />
+  </noscript>
+
+  <style>
+    body{font-family:system-ui,Arial,Helvetica,sans-serif;margin:2rem;}
+    .btn{display:inline-block;padding:0.6rem 1rem;border-radius:6px;border:1px solid #222;text-decoration:none;cursor:pointer}
+  </style>
+</head>
+<body>
+  <h1>Demo Meta Pixel</h1>
+  <p>Pixel ID: <strong>YOUR_PIXEL_ID</strong></p>
+
+  <button class="btn" id="leadBtn">Simular Lead</button>
+  <button class="btn" id="purchaseBtn">Simular Purchase</button>
+
+  <script>
+    document.getElementById('leadBtn').addEventListener('click', function(){
+      fbq('track','Lead',{value:0.00, currency:'BRL'});
+      alert('Evento Lead enviado');
+    });
+    document.getElementById('purchaseBtn').addEventListener('click', function(){
+      fbq('track','Purchase',{value:49.99, currency:'BRL',content_ids:['SKU-123']});
+      alert('Evento Purchase enviado');
+    });
+  </script>
+</body>
+</html>
