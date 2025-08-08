@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto - Entrenamiento Melisa #XXX</title>
-    <style>
-        body {
-            background-color: rgba(255, 193, 7, 0.2);
-            color: rgba(0, 0, 0, 0.8);
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producto - Entrenamiento Melisa #XXX</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #6a5acd, #00ced1);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: white;
+        text-align: center;
+    }
+    img {
+        max-width: 250px;
+        width: 80%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    a.button {
+        background-color: rgba(255,255,255,0.15);
+        padding: 15px 30px;
+        text-decoration: none;
+        color: white;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        backdrop-filter: blur(5px);
+        transition: all 0.3s ease;
+    }
+    a.button:hover {
+        background-color: rgba(255,255,255,0.3);
+        transform: scale(1.05);
+    }
+    @media (max-width: 600px) {
+        a.button {
+            font-size: 1rem;
+            padding: 12px 20px;
         }
-        img {
-            max-width: 200px;
-            margin-top: 20px;
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: rgba(220, 53, 69, 0.8);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: rgba(220, 53, 69, 1);
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <h1>Entrenamiento Melisa #XXX</h1>
-    <p>Programa intensivo con acompañamiento profesional.</p>
-    <img src="https://via.placeholder.com/200" alt="Imagen del producto">
-    <br>
-    <a href="#">Agregar al carrito</a>
+    <img src="producto.jpg" alt="Producto Entrenamiento Melisa">
+    <a href="#" class="button">Agregar al carrito</a>
 </body>
 </html>
