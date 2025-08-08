@@ -1,54 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Entrenamiento Melisa #XXX</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #ff7f50, #ff1493);
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        color: white;
-        text-align: center;
-    }
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-    }
-    a.button {
-        background-color: rgba(255,255,255,0.15);
-        padding: 15px 30px;
-        text-decoration: none;
-        color: white;
-        border-radius: 30px;
-        font-size: 1.2rem;
-        backdrop-filter: blur(5px);
-        transition: all 0.3s ease;
-    }
-    a.button:hover {
-        background-color: rgba(255,255,255,0.3);
-        transform: scale(1.05);
-    }
-    @media (max-width: 600px) {
-        h1 {
-            font-size: 1.8rem;
-        }
-        a.button {
-            font-size: 1rem;
-            padding: 12px 20px;
-        }
-    }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entrenamiento Melisa #XXX — Inicio</title>
+
+  <!-- Google Fonts / CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Meta Pixel Base (ID: 1332485261412186) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1332485261412186');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1332485261412186&ev=PageView&noscript=1" /></noscript>
 </head>
 <body>
-    <h1>Entrenamiento Melisa #XXX</h1>
-    <a href="producto.html" class="button">Más Información</a>
+  <main class="site" role="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <span class="kicker">Entrenamiento</span>
+        <h1 id="hero-title">Entrenamiento Melisa #XXX</h1>
+        <p class="lead">Sesión demostrativa para agentes — usa los botones para generar eventos con Meta Pixel.</p>
+
+        <div class="hero-actions" role="region" aria-label="Acciones de demo">
+          <a class="btn btn-primary" href="producto.html" role="button">Más información</a>
+          <button class="btn btn-outline" onclick="alert('Ejemplo: abre producto.html para más acciones')">Ver guía</button>
+        </div>
+
+        <p class="small">Consejo: abre Meta Pixel Helper y Events Manager → Test events para ver los eventos en tiempo real.</p>
+      </div>
+
+      <div class="hero-right" aria-hidden="true" style="flex:0 0 320px;">
+        <div class="card" style="padding:0.9rem;">
+          <img class="product-img" src="producto.jpg" alt="Imagen del producto (ejemplo)">
+          <div style="padding:0.6rem;">
+            <div class="product-title">Mini demo</div>
+            <div class="product-desc">Ejemplo del producto que veremos en la página de producto.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de tarjetas (opcional, podemos dejar 1 tarjeta con llamada) -->
+    <section class="grid" aria-label="Tarjetas">
+      <article class="card">
+        <img src="producto.jpg" alt="Producto - Entrenamiento" class="product-img">
+        <h3 class="product-title">Entrenamiento intensivo</h3>
+        <p class="product-desc">Plan breve para demostrar eventos de Pixel (Lead, Purchase, AddToCart).</p>
+        <div style="display:flex;gap:0.6rem;margin-top:0.6rem;">
+          <a class="btn btn-primary" href="producto.html">Ver producto</a>
+        </div>
+      </article>
+    </section>
+
+  </main>
 </body>
 </html>
