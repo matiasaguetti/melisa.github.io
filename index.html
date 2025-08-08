@@ -1,180 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Entrenamiento Melisa #XXX</title>
-
-  <!-- Meta Pixel Code (ID: 1332485261412186) -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1332485261412186');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1332485261412186&ev=PageView&noscript=1" />
-  </noscript>
-  <!-- End Meta Pixel Code -->
-
-  <style>
-    /* Paleta - tonos más opacos/menos saturados */
-    :root{
-      --meta-blue: #155db8;      /* azul más sobrio */
-      --meta-blue-2: #1e66c7;    /* degradado secundario, menos brillante */
-      --bg-accent: linear-gradient(135deg, rgba(21,93,184,0.95), rgba(30,102,199,0.95));
-      --surface: rgba(255,255,255,0.035); /* tarjeta levemente translúcida */
-      --text-on-blue: #ffffff;
-      --muted: rgba(255,255,255,0.85);
-      --shadow: 0 8px 20px rgba(4,17,29,0.22); /* sombra más sutil */
-    }
-
-    html,body{
-      height:100%;
-      margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: var(--bg-accent);
-      color:var(--text-on-blue);
-    }
-
-    /* Centrado vertical/horizontal */
-    .wrap{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:2rem;
-      box-sizing:border-box;
-    }
-
-    .card{
-      width:100%;
-      max-width:920px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.02));
-      border-radius:14px;
-      padding:2.8rem;
-      box-shadow: var(--shadow);
-      text-align:center;
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(255,255,255,0.05);
-    }
-
-    /* Título grande y responsive */
-    h1{
-      margin:0 0 1rem 0;
-      line-height:1;
-      font-weight:700;
-      color:var(--text-on-blue);
-      font-size: clamp(2.2rem, 6vw, 3.6rem);
-      letter-spacing: -0.02em;
-      text-align:center;
-    }
-
-    p.lead{
-      margin:0 0 1.8rem 0;
-      color:var(--muted);
-      font-size:1.05rem;
-    }
-
-    /* Botones - diseño llamativo pero opacado */
-    .controls{
-      display:flex;
-      gap:1rem;
-      justify-content:center;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:0.85rem 1.3rem;
-      min-width:150px;
-      border-radius:10px;
-      border:none;
-      cursor:pointer;
-      font-weight:600;
-      font-size:1rem;
-      transition: transform .12s ease, box-shadow .12s ease, opacity .12s;
-      box-shadow: 0 8px 18px rgba(4,17,29,0.16);
-      color:var(--text-on-blue);
-      text-decoration:none;
-    }
-
-    .btn:active{ transform: translateY(1px); }
-
-    .btn-primary{
-      background: linear-gradient(90deg, rgba(30,102,199,0.95), rgba(21,93,184,0.95));
-      box-shadow: 0 10px 26px rgba(21,93,184,0.18);
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-    .btn-primary:hover{
-      transform:translateY(-3px);
-      box-shadow: 0 16px 34px rgba(21,93,184,0.20);
-      opacity:0.98;
-    }
-
-    .btn-ghost{
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.10);
-      color:var(--text-on-blue);
-      backdrop-filter: blur(2px);
-    }
-    .btn-ghost:hover{
-      transform:translateY(-2px);
-      box-shadow: 0 10px 20px rgba(4,17,29,0.14);
-    }
-
-    /* Pequeños detalles */
-    .small{
-      display:block;
-      margin-top:1.4rem;
-      color: rgba(255,255,255,0.78);
-      font-size:0.95rem;
-    }
-
-    /* Responsive: ajustar padding en móviles */
-    @media (max-width:520px){
-      .card{ padding:1.6rem; border-radius:12px; }
-      .btn{ min-width:120px; padding:0.7rem 0.95rem; font-size:.96rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento Melisa #XXX</title>
+    <style>
+        body {
+            background-color: rgba(0, 123, 255, 0.2);
+            color: rgba(0, 0, 0, 0.8);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgba(40, 167, 69, 0.8);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: rgba(40, 167, 69, 1);
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card" role="main" aria-labelledby="page-title">
-      <h1 id="page-title">Entrenamiento Melisa #XXX</h1>
-      <p class="lead">Página demo para formación — Meta Pixel activo (ID: <strong>1332485261412186</strong>).</p>
-
-      <div class="controls" role="region" aria-label="Controles de demostración">
-        <button id="leadBtn" class="btn btn-primary" aria-pressed="false">Enviar Lead</button>
-        <button id="purchaseBtn" class="btn btn-ghost" aria-pressed="false">Enviar Purchase</button>
-      </div>
-
-      <span class="small">Consejo: desactiva bloqueadores de anuncios y abre Meta Pixel Helper para ver los eventos en tiempo real.</span>
-    </div>
-  </div>
-
-  <script>
-    // Eventos para la demo — envía parámetros visibles en Events Manager (Test events)
-    document.getElementById('leadBtn').addEventListener('click', function(){
-      fbq('track','Lead',{value:0.00,currency:'BRL',source:'demo-page'});
-      this.setAttribute('aria-pressed','true');
-      alert('Evento Lead enviado (ver en Pixel Helper / Events Manager).');
-    });
-
-    document.getElementById('purchaseBtn').addEventListener('click', function(){
-      fbq('track','Purchase',{value:49.99,currency:'BRL',content_ids:['SKU-META-DEMO']});
-      this.setAttribute('aria-pressed','true');
-      alert('Evento Purchase enviado (ver en Pixel Helper / Events Manager).');
-    });
-  </script>
+    <h1>Entrenamiento Melisa #XXX</h1>
+    <a href="producto.html">Más Información</a>
 </body>
 </html>
