@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrenamiento Melisa #XXX</title>
-    <style>
-        body {
-            background-color: rgba(0, 123, 255, 0.2);
-            color: rgba(0, 0, 0, 0.8);
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 100px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrenamiento Melisa #XXX</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff7f50, #ff1493);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    a.button {
+        background-color: rgba(255,255,255,0.15);
+        padding: 15px 30px;
+        text-decoration: none;
+        color: white;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        backdrop-filter: blur(5px);
+        transition: all 0.3s ease;
+    }
+    a.button:hover {
+        background-color: rgba(255,255,255,0.3);
+        transform: scale(1.05);
+    }
+    @media (max-width: 600px) {
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
         }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: rgba(40, 167, 69, 0.8);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+        a.button {
+            font-size: 1rem;
+            padding: 12px 20px;
         }
-        a:hover {
-            background-color: rgba(40, 167, 69, 1);
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
     <h1>Entrenamiento Melisa #XXX</h1>
-    <a href="producto.html">Más Información</a>
+    <a href="producto.html" class="button">Más Información</a>
 </body>
 </html>
